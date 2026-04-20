@@ -1,0 +1,45 @@
+package OOPs.multilevelinheritance;
+
+class company_ceo {
+    String c_name = "Pagani";
+
+    void ceo(String name) {
+        System.out.println("Company Name :: " + c_name);
+        System.out.println("CEO Name :: " + name);
+    }
+}
+
+class business_head extends company_ceo {
+    void BA() {
+        System.out.println("Company Name :: " + super.c_name);
+
+        System.out.println("Business Developer");
+    }
+}
+
+class HR extends business_head {
+
+    void hr_details(int id, String name) {
+        System.out.println("HR Id :: " + id);
+        System.out.println("HR Name :: " + name);
+        System.out.println("Company Name :: " + super.c_name);
+    }
+
+}
+
+public class multilevel_inheritance {
+    public static void main(String[] args) {
+
+        HR h1 = new HR();
+        System.out.println("========================");
+
+        h1.ceo("Mr. Aryan Nehete"); // Parent1
+        System.out.println("========================");
+        h1.BA();
+        System.out.println("========================");
+
+        h1.hr_details(101, "Keya Chaudhary");
+        System.out.println("========================");
+
+    }
+}
