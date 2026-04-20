@@ -8,9 +8,15 @@ public class Main {
         System.out.println(f1.a);// father(child) class variable
 
         //parent class method
-
         f1.grandParent();
 
+        System.out.println("------------------------------------------");
+
+        //child class
+        Employee e = new Employee();
+        e.works();//parent class
+        e.work();//child class
+        e.printids();
     }
 
 }
