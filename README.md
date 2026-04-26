@@ -1,8 +1,3 @@
-Here’s a **clean, professional README.md** for your repo
-👉 Java_Practice GitHub Repository
-
-You can directly copy-paste this into your GitHub 👇
-
 ---
 
 # 🚀 Java Practice Repository
